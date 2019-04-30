@@ -424,7 +424,7 @@ namespace DiscordRPC.Example
             Console.SetCursorPosition(cursorIndex, Console.CursorTop);
         }
 
-        static void ExecuteCommand(string word)
+        static void ExecuteCommand(string word)//Proposing instead, use exec(string word)
         {
             //Trim the extra spacing
             word = word.Trim();
@@ -508,7 +508,7 @@ namespace DiscordRPC.Example
                     break;
 
                 default:
-                    Console.WriteLine("Unkown Command '{0}'. Try 'help' for a list of commands", command);
+                    Console.WriteLine("Unknown Command '{0}'. Try 'help' for a list of commands", command);
                     break;
             }
 
